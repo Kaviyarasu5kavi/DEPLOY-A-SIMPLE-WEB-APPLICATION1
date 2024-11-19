@@ -60,14 +60,28 @@ Before deploying the application, make sure you have the following:
    sudo apt install php libapache2-mod-php -y
 
 ### Step 3: Transfer the Project Files
-1.Transfer the files from your local machine to the server’s Apache root directory using scp:
+1. Transfer the files from your local machine to the server’s Apache root directory using scp:
    ```bash
    scp -r /path/to/local/calendar/* username@your-instance-ip:/var/www/html/
+
 
 ### Step 4: Set Permissions
 1. Ensure that the Apache user has permissions to access the files:
    ```bash
    sudo chown -R www-data:www-data /var/www/html/
+
+### Step 5: Restart Apache
+1. After uploading the files, restart Apache to load the application:
+   ```bash
+   sudo systemctl restart apache2.
+
+
+## Accessing the Application
+Once deployed, you can access the application via your server’s public IP address:
+```bash
+http://your-instance-ip/
+Replace your-instance-ip with the actual IP address of your server.
+
 
 
 
