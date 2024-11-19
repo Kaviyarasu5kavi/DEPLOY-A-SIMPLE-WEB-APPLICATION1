@@ -45,32 +45,42 @@ Before deploying the application, make sure you have the following:
 
 ## Deployment
 
-### Step 1: Set Up a Cloud Instance
-1. Create an account with a cloud provider of your choice (AWS, Google Cloud, Azure, or DigitalOcean).
-2. Create a new instance (Ubuntu is recommended) using the provider’s free tier options.
-3. Connect to the instance using SSH:
-   ```bash
-   ssh username@your-instance-ip
+### Step 1: Set Up a GCP VM Instance
+1. Log in to your Google Cloud Console.
+2. Navigate to the Compute Engine section and create a new VM instance:
+   - Name: Choose a unique name for your instance.
+   - Machine Type: Select a suitable machine type (e.g., e2-micro for free tier).
+   - Image: Use Ubuntu as the operating system.
+3. Allow HTTP and HTTPS traffic under the Firewall section.
+4. Click Create to start the instance.
 
-### Step 2: Install Apache and PHP on the Server
+### Step 2: Connect to the GCP VM Instance
+1. Use the SSH button in the Google Cloud Console to connect to the instance.
+2. Alternatively, connect via terminal using the following command:
+   ```bash
+   gcloud compute ssh your-instance-name
+
+
+
+### Step 3: Install Apache and PHP on the Server
 1. Run the following commands to install Apache and PHP on your server:
    ```bash
    sudo apt update
    sudo apt install apache2 -y
    sudo apt install php libapache2-mod-php -y
 
-### Step 3: Transfer the Project Files
+### Step 4: Transfer the Project Files
 1. Transfer the files from your local machine to the server’s Apache root directory using scp:
    ```bash
    scp -r /path/to/local/calendar/* username@your-instance-ip:/var/www/html/
 
 
-### Step 4: Set Permissions
+### Step 5: Set Permissions
 1. Ensure that the Apache user has permissions to access the files:
    ```bash
    sudo chown -R www-data:www-data /var/www/html/
 
-### Step 5: Restart Apache
+### Step 6: Restart Apache
 1. After uploading the files, restart Apache to load the application:
    ```bash
    sudo systemctl restart apache2.
@@ -79,8 +89,7 @@ Before deploying the application, make sure you have the following:
 ## Accessing the Application
 Once deployed, you can access the application via your server’s public IP address:
 1. Replace your-instance-ip with the actual IP address of your server.
-   ```bash
-   http://your-instance-ip/
+   ```bash http://your-instance-ip/
 
 
 
