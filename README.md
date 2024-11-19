@@ -18,7 +18,7 @@ This project is a basic calendar web application built using PHP. It allows user
 
 Before deploying the application, make sure you have the following:
 
-- A cloud account on AWS, Google Cloud, Azure, or DigitalOcean (for hosting the app on a public server).
+- A Google Cloud Platform (GCP) account (for hosting the app on a public server).
 - Basic knowledge of PHP, file transfers, and terminal commands.
 - An SSH key for secure access to the server (optional but recommended).
 
