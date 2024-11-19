@@ -79,7 +79,7 @@ Before deploying the application, make sure you have the following:
 ## Accessing the Application
 Once deployed, you can access the application via your server’s public IP address:
    ```bash
-   http://your-instance-ip/
+   http://your-instance-ip/```
 
 1. Replace your-instance-ip with the actual IP address of your server.
 
