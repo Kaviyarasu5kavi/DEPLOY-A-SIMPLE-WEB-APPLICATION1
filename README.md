@@ -38,4 +38,19 @@ Before deploying the application, make sure you have the following:
 2. Navigate to the calendar folder:
    ```bash
    cd path/to/calendar
+3. Start a PHP local server:
+   ```bash
+   php -S localhost:8000
+4. Visit http://localhost:8000 in your browser to view the calendar app.
+
+###Deployment
+
+### Step 1: Set Up a Cloud Instance
+1. Create an account with a cloud provider of your choice (AWS, Google Cloud, Azure, or DigitalOcean).
+2. Create a new instance (Ubuntu is recommended) using the provider’s free tier options.
+3. Connect to the instance using SSH:
+```bash
+ssh username@your-instance-ip
+
+
 
