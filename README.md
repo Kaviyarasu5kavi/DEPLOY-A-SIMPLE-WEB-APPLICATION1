@@ -1,12 +1,6 @@
 # DEPLOY-A-SIMPLE-WEB-APPLICATION1
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calendar Web Application </title>
-</head>
-<body>
+
+
     <h1>Simple Calendar Web Application</h1>
 
     <p>This project is a basic calendar web application built using PHP. It allows users to view a calendar interface on a web browser. The application is deployed on a public server to make it accessible to everyone.</p>
@@ -85,5 +79,5 @@ sudo apt install php libapache2-mod-php -y
 
     <h2 id="license">License</h2>
     <p>This project is open-source and licensed under the MIT License.</p>
-</body>
-</html>
+
+
