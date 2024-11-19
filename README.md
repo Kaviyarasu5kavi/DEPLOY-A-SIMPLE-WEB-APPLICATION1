@@ -35,3 +35,7 @@ Before deploying the application, make sure you have the following:
 1. Make sure PHP is installed:
    ```bash
    php -v
+2.Navigate to the calendar folder:
+   ```bash
+   cd path/to/calendar
+
