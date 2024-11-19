@@ -54,15 +54,18 @@ Before deploying the application, make sure you have the following:
 
 ### Step 2: Install Apache and PHP on the Server
 Run the following commands to install Apache and PHP on your server:
-   ```bash
-   sudo apt update
-   sudo apt install apache2 -y
-   sudo apt install php libapache2-mod-php -y
+```bash
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
 
 ### Step 3: Transfer the Project Files
 Transfer the files from your local machine to the server’s Apache root directory using scp:
-   ```bash
-   scp -r /path/to/local/calendar/* username@your-instance-ip:/var/www/html/
+```bash
+scp -r /path/to/local/calendar/* username@your-instance-ip:/var/www/html/
+
+
+
 
 
 
